@@ -24,7 +24,7 @@ jobs:
 
       - name: Yarn install
         run: |
-          yarn install --immutable --immutable-cache
+          yarn install --frozen-lockfile --immutable
 
       - name: Publish packages
         run: |
