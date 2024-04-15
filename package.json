@@ -5,7 +5,10 @@
   "description": "Sonyflake + pod hostname as machine id",
   "license": "MIT",
   "homepage": "https://github.com/kanziw/kubeflake",
-  "keywords": ["sonyflake", "kubernetes"],
+  "keywords": [
+    "sonyflake",
+    "kubernetes"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kanziw/kubeflake.git"
@@ -32,7 +35,10 @@
       "./package.json": "./package.json"
     }
   },
-  "files": ["/*.*js", "/*.d.ts"],
+  "files": [
+    "/*.*js",
+    "/*.d.ts"
+  ],
   "scripts": {
     "prepack": "yarn build",
     "build": "node scripts/build-exports.js && tsc -p tsconfig.build.json",
