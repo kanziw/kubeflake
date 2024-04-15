@@ -1,7 +1,7 @@
 # kubeflake
 
-> sonyflake + pod hostname as machine id
-> inspired by [kubeflake](https://github.com/xissy/kubeflake)
+> sonyflake + pod hostname as machine id  
+> inspired by [kubeflake](https://github.com/xissy/kubeflake)  
 > build settings referenced [unicode-segmenter](https://github.com/cometkim/unicode-segmenter)
 
 
@@ -36,7 +36,9 @@ parse(id);
 ```typescript
 import { Kubeflake } from '@kanziw/kubeflake'
 
-const kf = new Kubeflake({ startTime: new Date('2024-04-15T00:00:00Z') });
+const kf = new Kubeflake({
+  startTime: new Date('2024-04-15T00:00:00Z'),
+});
 
 const id = kf.next(); // 41628333006329n
 kf.parse(id);
