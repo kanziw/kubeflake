@@ -353,9 +353,17 @@ __metadata:
     "@biomejs/biome": "npm:^1.6.4"
     "@types/node": "npm:^20.12.7"
     esbuild: "npm:^0.20.2"
+    sonyflake-js: "npm:1.0.1"
     typescript: "npm:^5.4.5"
   languageName: unknown
   linkType: soft
+
+"sonyflake-js@npm:1.0.1":
+  version: 1.0.1
+  resolution: "sonyflake-js@npm:1.0.1"
+  checksum: 10c0/a80a4bdbaac4d65b4d62d982913bdfab2d54d37a5f4019a0368d7e7e0061ee6db85dd3be7459cafbbd2308ab9d890d04922730b9c82cdb29f9ac3a7d3b9f397c
+  languageName: node
+  linkType: hard
 
 "typescript@npm:^5.4.5":
   version: 5.4.5

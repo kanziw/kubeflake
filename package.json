@@ -44,6 +44,9 @@
     "build": "node scripts/build-exports.js && tsc -p tsconfig.build.json",
     "format": "biome check --apply ."
   },
+  "dependencies": {
+    "sonyflake-js": "1.0.1"
+  },
   "devDependencies": {
     "@biomejs/biome": "^1.6.4",
     "@types/node": "^20.12.7",
