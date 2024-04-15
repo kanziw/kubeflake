@@ -50,10 +50,12 @@
     "publish:rc": "yarn build && yarn publish-if-not-published --no-tag-check -- --tag rc"
   },
   "dependencies": {
+    "crypto-js": "^4.2.0",
     "sonyflake-js": "1.0.1"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.6.4",
+    "@types/crypto-js": "^4",
     "@types/node": "^20.12.7",
     "esbuild": "^0.20.2",
     "publish-if-not-published": "^3.1.3",

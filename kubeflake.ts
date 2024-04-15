@@ -1,9 +1,9 @@
-import * as crypto from 'node:crypto';
 import { hostname } from 'node:os';
+import { MD5 } from 'crypto-js';
 import { Sonyflake, type SonyflakeIdPayload } from 'sonyflake-js';
 
 const host = hostname();
-const sum = crypto.createHash('md5').update(host).digest();
+const sum = Buffer.from(MD5(host).toString(), 'hex');
 const machineIDBytes = sum.subarray(sum.length - 2); // extract last 2 bytes
 const machineId = BigInt(machineIDBytes.readUInt16BE());
 
