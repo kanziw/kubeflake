@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": ".",
+    "outDir": ".",
+    "declaration": true,
+    "emitDeclarationOnly": true
+  },
+  "include": ["./kubeflake.ts"],
+  "exclude": ["!./kubeflake.ts"]
+}

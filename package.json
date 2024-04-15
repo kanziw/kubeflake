@@ -1,0 +1,48 @@
+{
+  "name": "kubeflake",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Sonyflake + pod hostname as machine id",
+  "license": "MIT",
+  "homepage": "https://github.com/kanziw/kubeflake",
+  "keywords": ["sonyflake", "kubernetes"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanziw/kubeflake.git"
+  },
+  "maintainers": [
+    {
+      "email": "kanziwoong@gmail.com",
+      "name": "Jiwoong Jung"
+    }
+  ],
+  "exports": {
+    ".": "./kubeflake.js"
+  },
+  "publishConfig": {
+    "type": "commonjs",
+    "main": "./kubeflake.cjs",
+    "types": "./kubeflake.d.ts",
+    "exports": {
+      ".": {
+        "types": "./kubeflake.d.ts",
+        "import": "./kubeflake.js",
+        "require": "./kubeflake.cjs"
+      },
+      "./package.json": "./package.json"
+    }
+  },
+  "files": ["/*.*js", "/*.d.ts"],
+  "scripts": {
+    "prepack": "yarn build",
+    "build": "node scripts/build-exports.js && tsc -p tsconfig.build.json",
+    "format": "biome check --apply ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.6.4",
+    "@types/node": "^20.12.7",
+    "esbuild": "^0.20.2",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "yarn@4.1.1"
+}
