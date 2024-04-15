@@ -1,8 +1,12 @@
 # kubeflake
 
 > sonyflake + pod hostname as machine id  
-> inspired by [kubeflake](https://github.com/xissy/kubeflake)  
-> build settings referenced [unicode-segmenter](https://github.com/cometkim/unicode-segmenter)
+
+[![npm version](https://img.shields.io/npm/v/@kanziw/kubeflake)](https://www.npmjs.com/package/@kanziw/kubeflake)
+[![npm downloads](https://img.shields.io/npm/dt/@kanziw/kubeflake)](https://www.npmjs.com/package/@kanziw/kubeflake)
+
+- inspired by [kubeflake](https://github.com/xissy/kubeflake)
+- build settings referenced [unicode-segmenter](https://github.com/cometkim/unicode-segmenter)
 
 
 ## Usage
