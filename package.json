@@ -1,5 +1,5 @@
 {
-  "name": "kubeflake",
+  "name": "@kanziw/kubeflake",
   "version": "0.0.1",
   "type": "module",
   "description": "Sonyflake + pod hostname as machine id",
