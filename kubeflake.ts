@@ -22,7 +22,16 @@ const initSonyflake = (option: KubeflakeOption = {}): Sonyflake =>
     startTime: option.startTime,
   });
 
-export const kubeflake = (option?: KubeflakeOption) => initSonyflake(option).next();
+const globalCachedSf: Record<number, Sonyflake> = {};
+export const kubeflake = (option?: KubeflakeOption) => {
+  const statrTimeTs = option?.startTime?.getTime() || -1;
+  let cf = globalCachedSf[statrTimeTs];
+  if (!cf) {
+    cf = initSonyflake(option);
+    globalCachedSf[statrTimeTs] = cf;
+  }
+  return cf.next();
+};
 export const parse = (id: bigint, option?: KubeflakeOption): KubeflakeIdPayload => initSonyflake(option).parse(id);
 
 export class Kubeflake {
