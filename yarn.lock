@@ -287,21 +287,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@kanziw/kubeflake@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@kanziw/kubeflake@workspace:."
-  dependencies:
-    "@biomejs/biome": "npm:^1.6.4"
-    "@types/crypto-js": "npm:^4"
-    "@types/node": "npm:^20.12.7"
-    esbuild: "npm:^0.20.2"
-    publish-if-not-published: "npm:^3.1.3"
-    sonyflake-js: "npm:1.0.1"
-    typescript: "npm:^5.4.5"
-    vitest: "npm:^1.5.0"
-  languageName: unknown
-  linkType: soft
-
 "@npmcli/agent@npm:^2.0.0":
   version: 2.2.2
   resolution: "@npmcli/agent@npm:2.2.2"
@@ -1196,6 +1181,21 @@ __metadata:
   checksum: 10c0/ada66dec143d7f9cb0e2d0d29c69e9ce40d20f3a4cb96b0c6efb745025ac7f9ba647d7ac0990d0adfc37a2d2ae084a12009a9c833dbdbeadf648879a99b9df89
   languageName: node
   linkType: hard
+
+"kubeflake@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "kubeflake@workspace:."
+  dependencies:
+    "@biomejs/biome": "npm:^1.6.4"
+    "@types/crypto-js": "npm:^4"
+    "@types/node": "npm:^20.12.7"
+    esbuild: "npm:^0.20.2"
+    publish-if-not-published: "npm:^3.1.3"
+    sonyflake-js: "npm:1.0.1"
+    typescript: "npm:^5.4.5"
+    vitest: "npm:^1.5.0"
+  languageName: unknown
+  linkType: soft
 
 "local-pkg@npm:^0.5.0":
   version: 0.5.0

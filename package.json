@@ -1,6 +1,6 @@
 {
-  "name": "@kanziw/kubeflake",
-  "version": "0.1.0",
+  "name": "kubeflake",
+  "version": "1.0.0",
   "type": "module",
   "description": "Sonyflake + pod hostname as machine id",
   "license": "MIT",

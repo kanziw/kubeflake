@@ -2,8 +2,8 @@
 
 > sonyflake + pod hostname as machine id  
 
-[![npm version](https://img.shields.io/npm/v/@kanziw/kubeflake)](https://www.npmjs.com/package/@kanziw/kubeflake)
-[![npm downloads](https://img.shields.io/npm/dt/@kanziw/kubeflake)](https://www.npmjs.com/package/@kanziw/kubeflake)
+[![npm version](https://img.shields.io/npm/v/kubeflake)](https://www.npmjs.com/package/kubeflake)
+[![npm downloads](https://img.shields.io/npm/dt/kubeflake)](https://www.npmjs.com/package/kubeflake)
 
 - inspired by [kubeflake](https://github.com/xissy/kubeflake)
 - build settings referenced [unicode-segmenter](https://github.com/cometkim/unicode-segmenter)
@@ -14,13 +14,13 @@
 ### 1. Install
 
 ```shell
-yarn add @kanziw/kubeflake
+yarn add kubeflake
 ```
 
 ### 2. Create a ID
 
 ```typescript
-import { kubeflake, parse } from '@kanziw/kubeflake';
+import { kubeflake, parse } from 'kubeflake';
 
 const id = kubeflake(); // 509414012220366329n
 parse(id);
@@ -38,7 +38,7 @@ parse(id);
 ... or with custom startTime
 
 ```typescript
-import { Kubeflake } from '@kanziw/kubeflake'
+import { Kubeflake } from 'kubeflake'
 
 const kf = new Kubeflake({
   startTime: new Date('2024-04-15T00:00:00Z'),
