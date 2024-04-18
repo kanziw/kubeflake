@@ -17,12 +17,3 @@ test('Kubeflake with custom startTime', () => {
   console.log(id);
   console.log(kf.parse(id));
 });
-
-test('Use crypto-js for Web compatibility', () => {
-  const host = hostname();
-
-  const buf1 = crypto.createHash('md5').update(host).digest();
-  const buf2 = Buffer.from(MD5(host).toString(), 'hex');
-
-  assert.deepEqual(buf1, buf2);
-});

@@ -50,7 +50,6 @@
     "publish:rc": "yarn build && yarn publish-if-not-published --no-tag-check -- --tag rc"
   },
   "dependencies": {
-    "crypto-js": "^4.2.0",
     "sonyflake-js": "1.0.1"
   },
   "devDependencies": {

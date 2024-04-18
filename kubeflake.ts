@@ -1,5 +1,5 @@
 import { hostname } from 'node:os';
-import { MD5 } from 'crypto-js';
+import * as crypto from 'node:crypto';
 import { Sonyflake, type SonyflakeIdPayload } from 'sonyflake-js';
 
 export type KubeflakeOption = {
@@ -11,7 +11,7 @@ export type KubeflakeIdPayload = SonyflakeIdPayload;
 
 const getMachineId = (): bigint => {
   const host = hostname() || globalThis.crypto.randomUUID();
-  const sum = Buffer.from(MD5(host).toString(), 'hex');
+  const sum = crypto.createHash('md5').update(host).digest();
   const machineIDBytes = sum.subarray(sum.length - 2); // extract last 2 bytes
   return BigInt(machineIDBytes.readUInt16BE(0));
 };
