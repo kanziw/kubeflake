@@ -1,5 +1,5 @@
-import { hostname } from 'node:os';
 import * as crypto from 'node:crypto';
+import { hostname } from 'node:os';
 import { Sonyflake, type SonyflakeIdPayload } from 'sonyflake-js';
 
 export type KubeflakeOption = {
