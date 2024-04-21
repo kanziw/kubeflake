@@ -10,7 +10,7 @@ const distDir = path.join(rootDir, '');
 await fs.mkdir(distDir, { recursive: true });
 
 const src = (name) => path.join(srcDir, name);
-const modules = ['kubeflake.ts'];
+const modules = ['kubeflake.ts', 'kubeflake-cli.ts'];
 
 /**
  * @param {string} content

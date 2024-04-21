@@ -442,6 +442,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/minimist@npm:^1":
+  version: 1.2.5
+  resolution: "@types/minimist@npm:1.2.5"
+  checksum: 10c0/3f791258d8e99a1d7d0ca2bda1ca6ea5a94e5e7b8fc6cde84dd79b0552da6fb68ade750f0e17718f6587783c24254bbca0357648dd59dc3812c150305cabdc46
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:^14.11.8":
   version: 14.18.63
   resolution: "@types/node@npm:14.18.63"
@@ -1188,12 +1195,16 @@ __metadata:
   dependencies:
     "@biomejs/biome": "npm:^1.6.4"
     "@types/crypto-js": "npm:^4"
+    "@types/minimist": "npm:^1"
     "@types/node": "npm:^20.12.7"
     esbuild: "npm:^0.20.2"
+    minimist: "npm:^1.2.8"
     publish-if-not-published: "npm:^3.1.3"
     sonyflake-js: "npm:1.0.1"
     typescript: "npm:^5.4.5"
     vitest: "npm:^1.5.0"
+  bin:
+    kubeflake: ./kubeflake-cli.js
   languageName: unknown
   linkType: soft
 
@@ -1280,6 +1291,13 @@ __metadata:
   dependencies:
     brace-expansion: "npm:^2.0.1"
   checksum: 10c0/2c16f21f50e64922864e560ff97c587d15fd491f65d92a677a344e970fe62aafdbeafe648965fa96d33c061b4d0eabfe0213466203dd793367e7f28658cf6414
+  languageName: node
+  linkType: hard
+
+"minimist@npm:^1.2.8":
+  version: 1.2.8
+  resolution: "minimist@npm:1.2.8"
+  checksum: 10c0/19d3fcdca050087b84c2029841a093691a91259a47def2f18222f41e7645a0b7c44ef4b40e88a1e58a40c84d2ef0ee6047c55594d298146d0eb3f6b737c20ce6
   languageName: node
   linkType: hard
 
