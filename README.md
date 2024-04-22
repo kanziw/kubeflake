@@ -81,7 +81,7 @@ Generate 64-bit orderable unique IDs using Kubeflake.
 Options:
   -n, --number INTEGER  Number of Kubeflake IDs to generate (default is 1).
                         Please provide a positive integer value.
-  -p, --parse STRING     Parse a Kubeflake ID and display its components in JSON format.
+  -p, --parse STRING    Parse a Kubeflake ID and display its components in JSON format.
                         Only valid formats that can be parsed into a BigInt are accepted.
   -h, --help            Show this message and exit.
 ```
