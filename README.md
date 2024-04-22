@@ -14,7 +14,7 @@
 ### 1. Install
 
 ```shell
-yarn add kubeflake
+$ yarn add kubeflake
 ```
 
 ### 2. Create a ID
@@ -55,4 +55,33 @@ kf.parse(id);
   machineId: 24057
 }
 */
+```
+
+### 3. Use on Command Line Interface
+
+```shell
+$ npx kubeflake
+510468309502680569n
+
+$ npx kubeflake --parse 510468309502680569n
+{
+  startTime: 2014-09-01T00:00:00.000Z,
+  generatedTime: 2024-04-22T13:27:02.570Z,
+  timestamp: 304262822570,
+  sequence: 0,
+  machineId: 24057
+}
+
+$  npx kubeflake --help                
+
+Usage: kubeflake [OPTIONS]
+
+Generate 64-bit orderable unique IDs using Kubeflake.
+
+Options:
+  -n, --number INTEGER  Number of Kubeflake IDs to generate (default is 1).
+                        Please provide a positive integer value.
+  -p, --parse STRING     Parse a Kubeflake ID and display its components in JSON format.
+                        Only valid formats that can be parsed into a BigInt are accepted.
+  -h, --help            Show this message and exit.
 ```
